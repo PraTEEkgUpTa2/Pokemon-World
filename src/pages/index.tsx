@@ -5,8 +5,15 @@ import { fetchPokemonList, fetchPokemonDetail } from '@/utils/api';
 import { useSearch } from '@/context/SearchContext';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+type Pokemon = {
+  id: number;
+  name: string;
+  image: string;
+  types: string[];
+};
+
 export default function Home() {
-  const [pokemons, setPokemons] = useState<any[]>([]);
+  const [pokemons, setPokemons] = useState<Pokemon[]>([]);
   const { search } = useSearch();
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 10; // 4 rows * 5 cards
