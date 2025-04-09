@@ -5,7 +5,20 @@ import { fetchPokemonDetail, fetchPokemonList } from '@/utils/api';
 
 const moveColors = ['bg-green-500', 'bg-red-500', 'bg-purple-500', 'bg-orange-400', 'bg-pink-400', 'bg-yellow-500'];
 
-const PokemonDetail = ({ pokemon }: { pokemon: any }) => {
+type PokemonDetail = {
+  id: number;
+  name: string;
+  image: string;
+  types: string[];
+  abilities: string[];
+  stats: string[];
+  base_stats: number[];
+  moves: string[];
+  height: number;
+  weight: number;
+};
+
+const PokemonDetail = ({ pokemon }: { pokemon: PokemonDetail}) => {
   return (
     
       <div className="h-screen w-full flex flex-col justify-start items-center bg-[#dffcf4] px-4">
