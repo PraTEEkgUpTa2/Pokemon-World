@@ -1,7 +1,6 @@
 "use client";
 
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Layout from '@/components/Layout';
 import { fetchPokemonDetail, fetchPokemonList } from '@/utils/api';
 
 const moveColors = ['bg-green-500', 'bg-red-500', 'bg-purple-500', 'bg-orange-400', 'bg-pink-400', 'bg-yellow-500'];
