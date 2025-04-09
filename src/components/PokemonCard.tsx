@@ -7,26 +7,7 @@ interface PokemonCardProps {
   types?: string[];
 }
 
-const typeColors: Record<string, string> = {
-  normal: 'bg-gray-300 dark:bg-gray-600',
-  fire: 'bg-red-400 dark:bg-red-600',
-  water: 'bg-blue-400 dark:bg-blue-600',
-  grass: 'bg-green-400 dark:bg-green-600',
-  electric: 'bg-yellow-400 dark:bg-yellow-500',
-  ice: 'bg-blue-200 dark:bg-blue-400',
-  fighting: 'bg-orange-700 dark:bg-orange-900',
-  poison: 'bg-purple-400 dark:bg-purple-600',
-  ground: 'bg-yellow-600 dark:bg-yellow-800',
-  flying: 'bg-indigo-300 dark:bg-indigo-500',
-  psychic: 'bg-pink-400 dark:bg-pink-600',
-  bug: 'bg-lime-500 dark:bg-lime-700',
-  rock: 'bg-yellow-800 dark:bg-yellow-900',
-  ghost: 'bg-indigo-700 dark:bg-indigo-900',
-  dark: 'bg-gray-800 dark:bg-black',
-  dragon: 'bg-purple-700 dark:bg-purple-900',
-  steel: 'bg-gray-400 dark:bg-gray-500',
-  fairy: 'bg-pink-200 dark:bg-pink-400',
-};
+
 
 const PokemonCard = ({ name, image, id }: PokemonCardProps) => {
   return (
